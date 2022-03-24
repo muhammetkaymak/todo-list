@@ -5,19 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo App</title>
-
-    <!-- Bootstrap -->
-    <link 
-    rel="stylesheet"
+    <link rel="stylesheet" crossorigin="anonymous"
     href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous">
-
-    <!-- STYLE -->
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="container">
         <h1>Todo List</h1>
         <div class="row justify-content-center">
@@ -28,33 +21,21 @@
                             <input type="text" id="txtItem" class="form-control"
                             title="title">
                             <div class="input-group-append">
-                                <button 
-                                    class="btn btn-outline-secondary"
-                                    id="btnCreate">
-                                    Add
-                                </button>
+                                <button class="btn btn-outline-secondary" id="btnCreate">Add</button>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="card mt-3">
                     <div class="card-header">
                         My List
-                        <button id="deleteAll" class="btn-danger btn-sm d-none">
-                            Delete All
-                        </button>
+                        <button id="deleteAll" class="btn-danger btn-sm d-none">Delete All</button>
                     </div>
-                    <ul id="myList" class="list-group list-group-flush">
-                        
-                    </ul>
+                    <ul id="myList" class="list-group list-group-flush"></ul>
                 </div>
             </div>
         </div>
     </div>
-    
-
-    <!-- Script -->
     <script src="script.js"></script>
 </body>
 </html>
